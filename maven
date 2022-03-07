@@ -21,7 +21,7 @@ pipeline
         {
             steps
             {
-               deploy adapters: [tomcat9(credentialsId: '9d2dbbc5-b55a-445f-9551-f8954d231a5f', path: '', url: 'http://13.233.91.43:8080')], contextPath: 'ranapath', war: '**/*.war'
+               deploy adapters: [tomcat9(credentialsId: '9d2dbbc5-b55a-445f-9551-f8954d231a5f', path: '', url: 'http://13.233.91.43:8080')], contextPath: 'bahubalipath', war: '**/*.war'
             }
         }
         stage('ContinuousTesting')
